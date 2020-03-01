@@ -1,0 +1,34 @@
+{
+  "name": "my-new-package",
+  "version": "0.0.0",
+  "description": "{{ description }}",
+  "scripts": {
+    "t": "zoroaster -a",
+    "test": "yarn t test/spec test/mask",
+    "doc": "doc -o README.md -d",
+    "splendid": "splendid",
+    "prod": "splendid -s",
+    "dev": "splendid -s -e dev",
+    "s": "splendid -s",
+    "d": "splendid -s -e dev"
+  },
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "{{ repo.git_url }}"
+  },
+  "keywords": [
+    "{{ keywords }}"
+  ],
+  "author": "{{ author_name }} <{{ author_email }}>",
+  "license": "{{ license_spdx }}",
+  "bugs": {
+    "url": "{{ repo.html_url }}/issues"
+  },
+  "homepage": "{{ URL }}",
+  "devDependencies": {
+    "documentary": "^1.37.1",
+    "splendid": "^1.17.3",
+    "zoroaster": "^4.3.0"
+  }
+}

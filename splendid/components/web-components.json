@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tags": [{
+    "name": "ellipsis",
+    "description": "An element that displays text and moving triple dots. The text should be put inside of the element.",
+    "attributes": [{
+      "name": "timeout",
+      "description": "How often to move the dots."
+    }]
+  }]
+}

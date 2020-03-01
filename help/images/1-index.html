@@ -1,0 +1,19 @@
+## Images
+
+There are a number of strategies for including images, depending on the required quality (either original, or a bit lower quality but with better compression hence smaller file size using `webp`), and position on the page where they are placed.
+
+Images are added with the standard `<img>` tag, however to enable processing by _Splendid_, the tag needs to be closed with a `/>`. If it is not closed (i.e., is written as *void* tag), the standard HTML is kept without any processing.
+
+```html
+<img src="img/example.jpg" alt="Image"/> <!-- processed -->
+
+<img src="img/example.jpg" alt="Image"> <!-- NOT processed -->
+```
+
+### Alt Attribute
+
+The `alt` attribute is essential for SEO and users with screen readers, therefore there will be a warning displayed when it is missing (on processed tags).
+
+### Paths
+
+When specified paths to the image begin with `.` such as `<img src="./img/example.jpg" />`, they will be resolved to the location relative to the file in which they are referenced. When there is no leading `.`, such as `<img src="img/example.jpg" />`, the path is relative to the _Splendid_ app directory.

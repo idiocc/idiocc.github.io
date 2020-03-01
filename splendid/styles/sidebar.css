@@ -1,0 +1,29 @@
+.SideBarMenu {
+  /* opacity: 0.5; */
+  max-height: 100vh;
+  overflow: auto;
+}
+.SideBarMenu:hover {
+  /* opacity: 1; */
+}
+
+#ShowMenu {
+  display: block;
+}
+.SideBarMenu #HideMenu {
+  display: none;
+}
+
+.SideBarMenu.sidebarshowing #ShowMenu {
+  display: none;
+}
+.SideBarMenu.sidebarshowing #HideMenu {
+  display: block;
+}
+
+.SideBarMenu .SideBarContent {
+  display: none;
+}
+.SideBarMenu.sidebarshowing .SideBarContent {
+  display: block;
+}
