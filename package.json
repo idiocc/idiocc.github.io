@@ -1,7 +1,7 @@
 {
-  "name": "my-new-package",
+  "name": "@idio/idiocc.github.io",
   "version": "0.0.0",
-  "description": "{{ description }}",
+  "description": "Idio Meta.",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -15,17 +15,19 @@
   "files": [],
   "repository": {
     "type": "git",
-    "url": "{{ repo.git_url }}"
+    "url": "git://github.com/idiocc/idiocc.github.io.git"
   },
   "keywords": [
-    "{{ keywords }}"
+    "idio",
+    "web",
+    "server"
   ],
-  "author": "{{ author_name }} <{{ author_email }}>",
-  "license": "{{ license_spdx }}",
+  "author": "Anton <anton@adc.sh>",
+  "license": "AGPL-3.0",
   "bugs": {
-    "url": "{{ repo.html_url }}/issues"
+    "url": "https://github.com/idiocc/idiocc.github.io/issues"
   },
-  "homepage": "{{ URL }}",
+  "homepage": "https://idiocc.github.io",
   "devDependencies": {
     "documentary": "^1.37.1",
     "splendid": "^1.17.3",

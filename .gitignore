@@ -62,11 +62,3 @@ typings/
 
 depack-temp
 splendid/.cache
-# start template
-docs/*
-!docs/.index.html
-splendid/potrace/*
-splendid/css/*
-!splendid/potrace/README.md
-!splendid/css/README.md
-# end template

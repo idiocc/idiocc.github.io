@@ -20,7 +20,7 @@ const meta = [{
   key: 'social-buttons',
   id: 'cc6e3',
   props: {
-    url: 'https://mnpjs.github.io/splendid/',
+    url: 'https://idiocc.github.io',
     meta: true,
     className: 'b-xq b-Hk',
   },
@@ -36,7 +36,7 @@ const meta = [{
 meta.forEach(({ key, id, props = {}, children = [] }) => {
   const Comp = __components[key]
   const plain = Comp.plain || (/^\s*class\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))
-  props.splendid = { mount: '/splendid/', addCSS(stylesheet) {
+  props.splendid = { addCSS(stylesheet) {
     return makeClassGetter(renameMaps[stylesheet])
   } }
 

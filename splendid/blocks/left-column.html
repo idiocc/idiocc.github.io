@@ -1,28 +1,20 @@
 <column md-3 class="left-column">
-  <!-- help: Include bootstrap utils in attributes.
-       If there are problems, switch it off using `config.bootstrapUtils` -->
   <div text-center>
-    <!-- help: * You have to close splendid void components (like img) with `/>`
-         or not use `/` (just `>`) when you want to keep them as HTML. -->
-    <!-- help: * Use webp attribute on img to automatically generate responsive
-         webp images. -->
-    <img img-fluid rounded src="../img/splash.jpg" alt="{{ full-name }} logo"
+    <img img-fluid rounded src="../img/splash.jpg" alt="@idio/idiocc.github.io logo"
       webp="photo" />
   </div>
   <div text-center>
-    <github-badge name="{{ name }}" org="{{ org }}" />
+    <github-badge name="idiocc.github.io" org="idiocc" />
     <!-- uncomment when published -->
-    <!-- <npm-badge package="my-new-package">_MyNewPackage_</npm-badge> -->
+    <!-- <npm-badge package="@idio/idiocc.github.io">_Idiocc.github.io_</npm-badge> -->
     <npm-badge package="splendid">_Splendid_</npm-badge>
   </div>
 
   ### Pages
 
-  <!-- help: Embed your elements. -->
   <pages />
 
   <sidebar pt-3>
-    <!-- help: Call Splendid components. -->
     <social-buttons meta mb-3 d-inline-block />
   </sidebar>
 </column>
