@@ -1,5 +1,6 @@
 /** @type {import('splendid').Config} */
 const config = {
+  output: '.',
   layout: 'splendid/layout/main.html',
   replacements: [
     {
