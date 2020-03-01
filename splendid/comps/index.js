@@ -6,10 +6,12 @@ __initSidebar()
 import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from './__competent-lib'
 import Ellipsis from '../components/ellipsis.jsx'
+import GithubBadge from '../components/github-badge.jsx'
 import SocialButtons from 'splendid/build/components/social-buttons'
 
 const __components = {
   'ellipsis': Ellipsis,
+  'github-badge': GithubBadge,
   'social-buttons': SocialButtons,
 }
 
@@ -17,12 +19,11 @@ const io = makeIo()
 
 /** @type {!Array<!preact.PreactProps>} */
 const meta = [{
-  key: 'social-buttons',
-  id: 'cc6e3',
+  key: 'github-badge',
+  id: 'c5652',
   props: {
-    url: 'https://idiocc.github.io',
-    meta: true,
-    className: 'b-xq b-Hk',
+    owner: 'idiocc',
+    name: 'idiocc.github.io',
   },
 },
 {
@@ -32,11 +33,20 @@ const meta = [{
     timeout: 300,
   },
   children: ["\n  Please bear one moment while I add the content\n"],
+},
+{
+  key: 'social-buttons',
+  id: 'cede9',
+  props: {
+    url: 'https://idiocc.github.io/',
+    meta: true,
+    className: 'b-xq b-Hk',
+  },
 }]
 meta.forEach(({ key, id, props = {}, children = [] }) => {
   const Comp = __components[key]
   const plain = Comp.plain || (/^\s*class\s+/.test(Comp.toString()) && !Component.isPrototypeOf(Comp))
-  props.splendid = { addCSS(stylesheet) {
+  props.splendid = { mount: '/', addCSS(stylesheet) {
     return makeClassGetter(renameMaps[stylesheet])
   } }
 

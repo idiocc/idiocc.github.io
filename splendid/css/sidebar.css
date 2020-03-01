@@ -1,0 +1,1 @@
+.SideBarMenu{max-height:100vh;overflow:auto}.SideBarMenu #ShowMenu{display:block}.SideBarMenu #HideMenu,.SideBarMenu.sidebarshowing #ShowMenu{display:none}.SideBarMenu.sidebarshowing #HideMenu{display:block}.SideBarMenu .a{display:none}.SideBarMenu.sidebarshowing .a{display:block}

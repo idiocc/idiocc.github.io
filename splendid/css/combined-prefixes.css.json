@@ -1,0 +1,32 @@
+{
+  "border-radius": [
+    ".25rem"
+  ],
+  "box-shadow": [
+    "none"
+  ],
+  "flex|-ms-flex": [
+    "0 0 25%"
+  ],
+  "display": [
+    "flex|-ms-flexbox"
+  ],
+  "hyphens|-webkit-hyphens|-ms-hyphens": [
+    "auto"
+  ],
+  "flex-shrink|-ms-flex-negative": [
+    "0"
+  ],
+  "position": [
+    "sticky|-webkit-sticky"
+  ],
+  "flex-wrap|-ms-flex-wrap": [
+    "wrap"
+  ],
+  "box-sizing": [
+    "border-box"
+  ],
+  "flex-direction|-ms-flex-direction": [
+    "column"
+  ]
+}
